@@ -1,0 +1,23 @@
+---
+layout: main
+title: Home
+---
+
+<h1 class="cpc-page-title">Most recent posts</h1>
+
+{% for post in site.posts %}
+<a href="{{ post.url }} "class="cpc-shadow cpc-card cpc-item">
+  {% if post.cover %}
+  <div class="post-list-cover" style="background-image: url({{ post.cover }})"></div>
+  {% endif %}
+  <h2 class="cpc-card-head">{{ post.title }}</h2>
+  <p class="cpc-card-subhead">
+    <span class="cpc-post-list-description">{{ post.description }}</span>
+    <span>{{ post.author }} in {{ post.tag }}</span>
+    <span class="cpc-post-list-date">{{ post.date | date_to_string }}
+      - {{ post.duration }} read</span>
+  </p>
+  <!-- <div class="cpc-post-list-body"> -->
+  <!-- </div> -->
+</a>
+{% endfor %}

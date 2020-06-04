@@ -1,0 +1,158 @@
+---
+---
+
+$font-color: #444;
+
+.container-width {
+  max-width: 1032px;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.main-content-width {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+$background-main: #FAFAFA;
+/* $background-main: #111; */
+
+$background: (card: lighten($background-main, 10));
+
+body {
+  background-color: $background-main;
+  margin: 0;
+  font-family: "Open Sans";
+  color: $font-color;
+}
+
+$color: #CCC;
+
+.cpc-card {
+  display: block;
+  text-decoration: none;
+  /* background-color: #fff; */
+  background-color: map-get($background, card);
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 10px $color;
+  border: 1px solid $color;
+}
+
+.cpc-card-head {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cpc-card-subhead {
+  margin: 0 0;
+  font-size: 0.79em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cpc-post-date {
+  color: #555;
+  font-size: 0.98em;
+}
+
+.cpc-shadow:hover {
+  border-color: darken($color, 15);
+  box-shadow: 8px 8px 10px $color;
+}
+
+.cpc-main-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  height: 40px;
+}
+
+.cpc-main-nav ul li a {
+  display: block;
+  width: 65px;
+  font-size: .95em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: lighten($font-color, 20);
+  /* border: 1px solid; */
+  text-align: center;
+
+  &:hover {
+    color: darken($font-color, 30);
+  }
+}
+
+.bg-yellow {
+  background: #FF0;
+}
+
+.cpc-logo {
+  height: 40px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.cpc-item {
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: inherit;
+}
+
+.cpc-post p {
+  margin: 0;
+  padding: 0px;
+}
+
+.cpc-post-body {
+  margin-top: 10px;
+  /* margin-top: 50px; */
+}
+
+.cpc-post-body p {
+  margin: 0;
+}
+
+.cpc-post-title {
+  margin: 0;
+}
+
+.cpc-author-and-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.cpc-post {
+  padding: 20px 35px;
+}
+
+.cpc-post-main-content {
+  margin-top: 20px;
+}
+
+.cpc-post-main-content img {
+  /* display: block; */
+  max-width: 100%;
+}
+
+.cpc-post-list-body img {
+  max-height: 100px;
+}
+
+.cpc-post-list-description {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.post-list-cover {
+  height: 150px;
+  margin-bottom: 10px;
+  background-position: center;
+}

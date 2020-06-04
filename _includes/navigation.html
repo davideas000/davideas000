@@ -1,0 +1,12 @@
+<nav class="cpc-main-nav margin-auto container-width">
+  <ul>
+    <li>
+      <div class="cpc-logo bg-yellow"></div>
+    </li>
+    {% for nav in site.data.navigation %}
+    <li>
+      <a href="{{ nav.link }}">{{ nav.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
