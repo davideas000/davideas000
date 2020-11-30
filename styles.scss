@@ -51,7 +51,7 @@ $color: #CCC;
 
 .cpc-card-subhead {
   margin: 0 0;
-  font-size: 0.79em;
+  font-size: 0.7em;
   display: flex;
   flex-direction: column;
 }
@@ -120,8 +120,22 @@ $color: #CCC;
   margin: 0;
 }
 
-.cpc-post-title {
+/* .cpc-post-title { */
+.cpc-post-article-title {
   margin: 0;
+  font-size: 1.9em;
+}
+
+.cpc-post-header {
+  margin-bottom: 20px;
+}
+
+.cpc-subtitle {
+  font-size: 1.4em;
+  font-weight: 400;
+  /* margin-bottom: 1px; */
+  margin: 20px 0 5px;
+  /* font-weight: normal; */
 }
 
 .cpc-author-and-date {
@@ -129,21 +143,36 @@ $color: #CCC;
   flex-direction: column;
 }
 
-.cpc-post {
-  padding: 20px 35px;
+.cpc-post-padding {
+  padding: 10px 15px;
 }
 
-.cpc-post-main-content {
-  margin-top: 20px;
+@media(min-width: 450px) {
+  .cpc-post-padding {
+    padding: 20px 35px;
+  }
 }
 
-.cpc-post-main-content img {
+.cpc-post-main-content p {
+  margin: 0px;
+  /* text-align: justify; */
+}
+
+.cpc-post-main-content-img {
   /* display: block; */
+  /* margin: 20px 0 70px; */
+  margin: 20px 0;
   max-width: 100%;
 }
 
 .cpc-post-list-body img {
   max-height: 100px;
+}
+
+.cpc-post-main-content-subhead {
+  /* max-height: 100px; */
+  font-weight: normal;
+  margin: 40px 0 15px;
 }
 
 .cpc-post-list-description {
@@ -155,4 +184,80 @@ $color: #CCC;
   height: 150px;
   margin-bottom: 10px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post-list-recent {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-list-recent > div {
+  flex: 1;
+}
+
+.recent_posts {
+  margin-top: 10px;
+}
+
+.recent-posts-img {
+  height: 150px;
+  max-width: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.recent_posts_title {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.recent_posts_date {
+  display: block;
+  font-size: .7em;
+}
+
+.recent_posts li {
+  list-style: none;
+  display: block;
+}
+
+.recent_posts_header {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.recent_posts a {
+  text-decoration: none;
+}
+
+.post_title {
+  color: $font-color;
+  font-weight: 540;
+}
+
+.post_date {
+  display: block;
+  color: $font-color;
+  font-size: .7em;
+}
+
+.post_author {
+  display: block;
+  color: $font-color;
+  font-size: .7em;
+}
+
+.cpc-post-recent-posts-list {
+  padding: 0;
+  display: flex;
+  flex-wrap:  wrap;
+}
+
+.cpc-post-recent-posts-list-item {
+  flex: 1 0 auto;
+  padding: 0 10px;
 }
