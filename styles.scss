@@ -90,12 +90,17 @@ $color: #CCC;
   }
 }
 
+.cpc-main-nav-item {
+  height: 100%;
+}
+
 .bg-yellow {
   background: #FF0;
 }
 
 .cpc-logo {
-  height: 40px;
+  /* height: 40px; */
+  height: 100%;
   width: 100px;
   margin-right: 20px;
 }
